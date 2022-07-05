@@ -11,11 +11,12 @@ _req_api_ssl = api_ssl_dto.req_api_ssl
 _res_api_ssl = api_ssl_dto.res_api_ssl
 _post_validator = apiSslValidator()
 
+
 @api.route("api/v.1/test/ci")
 class Content(Resource):
     # @api.marshal_with(_res_api_ssl)
     # @api.expect(_req_api_ssl)
-    def post(self):
+    def get(self):
         data = request.json
-     
+
         return save_content(data)
