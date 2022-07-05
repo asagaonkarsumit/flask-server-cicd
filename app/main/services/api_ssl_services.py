@@ -19,16 +19,6 @@ def save_content(data):
 
     return {"status": "hello sumit"}
 
-    if(ps3.returncode != 0):
-        ssl_logger.critical(
-            f"error while giving permission return code not equal to zero-- {coreDomain}")
-        return {"status": False}
-
-    print(ps.returncode)
-    ssl_logger.critical(
-        f"ssl generated successfuly : {coreDomain}")
-    return {"status": True}
-
 
 def check_ssl_status(fqdn):
     ssl_active = True
