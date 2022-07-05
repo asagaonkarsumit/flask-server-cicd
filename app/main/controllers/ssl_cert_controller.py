@@ -18,5 +18,4 @@ class Content(Resource):
     # @api.expect(_req_api_ssl)
     def get(self):
         data = request.json
-
         return save_content(data)
