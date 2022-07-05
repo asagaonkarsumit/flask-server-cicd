@@ -16,8 +16,8 @@ from flask import current_app as cur_app
 
 
 def save_content(data):
-    
-    return {"status": "helloq"}
+
+    return {"status": "hello"}
 
     if(ps3.returncode != 0):
         ssl_logger.critical(
