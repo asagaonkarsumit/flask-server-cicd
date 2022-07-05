@@ -17,7 +17,7 @@ from flask import current_app as cur_app
 
 def save_content(data):
 
-    return {"statuss": "hello 789456"}
+    return {"statuss": "hello 78945s6"}
 
 
 def check_ssl_status(fqdn):
