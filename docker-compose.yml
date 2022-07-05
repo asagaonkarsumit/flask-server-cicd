@@ -1,0 +1,17 @@
+version: "3.7"
+
+services:
+
+  testserver:
+    build: ./
+    container_name: testserver
+    restart: always
+    expose:
+      - 8085
+
+
+
+
+
+
+
