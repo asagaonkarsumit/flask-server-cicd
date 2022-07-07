@@ -7,7 +7,7 @@ services:
     container_name: testserver
     restart: always
     expose:
-      - 8085
+      - "8085:8085"
     networks:
       appnet:
         ipv4_address: 172.24.2.1
