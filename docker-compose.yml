@@ -8,6 +8,17 @@ services:
     restart: always
     expose:
       - 8085
+    networks:
+      appnet:
+        ipv4_address: 172.24.2.1
+
+networks:
+  appnet:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: "172.24.2.0/16"
 
 
 
